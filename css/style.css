@@ -1,0 +1,178 @@
+body
+{
+    background-color: #1F4E78;
+}
+
+#datepicker, #datepicker2{
+    width:  80%;
+    margin-left: 5px;
+}
+#datepicker, #datepicker2 > span:hover{
+    cursor: pointer;
+}
+
+/*Configuração global das células*/
+.col, .col-sm-6, .col-md-12, .col-lg-3, .col-xl-4
+{
+
+}
+#LadoA
+{
+    margin-bottom: 10px;
+    height: 100%;
+}
+#LadoB
+{
+
+}
+
+
+/*Configuração dos cards com títulos na borda*/
+.bordertitle{
+    border: rgb(255, 255, 255) 2px solid;
+    border-radius: 6px;
+    margin: 10px -10px 3px -10px;
+    
+}
+.title{
+    position: relative;
+    top : -0.6em;
+    display: inline;
+    text-align: left;
+    margin-left: 1em;
+    background-color: #1F4E78;
+    padding: 0px 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.valor
+{
+    position: relative;
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: .2em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.cellb{
+    position: relative;
+    top : -0.7em;
+    background-color: transparent;
+    padding: 0px 14px;
+    margin-bottom: -.5em;
+}
+
+.cardB{
+    border: white 2px solid;
+    margin: 5px -10px;
+    border-radius: 5px;
+}
+.cardT{
+    text-align: center;
+    font-size: 112%;
+    background-image: linear-gradient(60deg,#ffcc33, #FFD966);
+    border-radius: 2px 2px 0px 0px;
+    color: #1F4E78;
+    font-weight: 600;
+}   
+.cardV{
+    margin: .1em;
+    text-align: center;
+    font-size: 2.2em;
+    color: #fff;
+}
+.botao {
+    background-color: transparent; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 5px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+  }
+  
+  /* Darker background on mouse-over */
+  .botao:hover {
+    color: #FFD966;
+  }
+  .nav-tabs{
+      padding: 0px;
+      margin: 0px;
+  }
+  .nav-link {
+    display: block;
+    padding: 0 1rem;
+}
+
+.filtro{
+    text-align: right;
+    padding: 5px 0px 0px 0px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+.filtro2{
+    text-align: center;
+    padding: 0px;
+}
+
+.card2{
+padding: 0px 10%;
+}
+
+.selectpicker{
+    
+}
+/* The CSS */
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+label {position:relative}
+label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:6%; top:20%;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+
+.combo{
+    padding: 3px 0 0 0;
+    text-align: center;
+}
+.combo2{
+   width: 95%;
+}
+.cabecalho
+{
+    background-image: linear-gradient(60deg,#ffcc33, #FFD966);
+}
+
+#logo{
+    margin: 20px 0px 20px 10px;
+}
