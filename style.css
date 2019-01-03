@@ -1,0 +1,94 @@
+/*Configuração global das células*/
+.col, .col-sm-6, .col-md-12, .col-lg-3, .col-xl-4
+{
+    background-color: rgb(208, 192, 223);
+    border: 1px black solid;
+}
+#LadoA
+{
+    border: 2px red solid;
+    margin-bottom: 10px;
+    height: 100%;
+}
+#LadoB
+{
+    border: 2px green solid;
+
+}
+.fullgrid
+{
+    background-color: brown;
+}
+
+/*Configuração dos cards com títulos na borda*/
+.bordertitle{
+    border: blue 3px solid;
+    border-radius: 4px;
+    margin: 10px -10px 3px -10px;
+    
+}
+.title{
+    position: relative;
+    top : -0.8em;
+    display: inline;
+    text-align: left;
+    margin-left: 1em;
+    background-color: #D0C0DF;
+    padding: 0px 5px;
+}
+.valor
+{
+    position: relative;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: .5em; 
+}
+
+
+.combo{
+    text-align: center;
+}
+.cellb{
+    position: relative;
+    top : -0.7em;
+    background-color: transparent;
+    padding: 0px 15.5px;
+    margin-bottom: -.5em;
+}
+
+.cardB{
+    border: red 1px solid;
+    margin: 5px -10px;
+    border-radius: 5px;
+}
+.cardT{
+    text-align: center;
+    font-size: 125%;
+    background-color: aqua;
+    border-radius: 5px;
+}
+.cardV{
+    margin: .1em;
+    text-align: center;
+    font-size: 2.3em;
+}
+.botao {
+    background-color: transparent; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 5px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+  }
+  
+  /* Darker background on mouse-over */
+  .botao:hover {
+    color: black;
+  }
+  .nav-tabs{
+      padding: 0px;
+      margin: 0px;
+  }
+  .nav-link {
+    display: block;
+    padding: 0 1rem;
+}
