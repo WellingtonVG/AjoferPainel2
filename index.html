@@ -6,6 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
@@ -19,13 +22,19 @@
 </head>
 
 <body>
-  <div class="cabecalho">
-      <img src="logo.png" alt="some text" width=245 height=50 id="logo">
+  <div class="row cabecalho">
+    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <img src="logo.png" alt="some text" width=245 height=50 id="logo">
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6" id="titulo">
+        Painel de Gestão
+    </div>
   </div>
   <div class="container-fluid">
     <div class="row">
       <div class="col">
-          <button class="botao" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-filter"></i></button>
+          <button class="botao" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-filter"><span id="btfiltro">Filtrar</span></i></button>
+          <button class="botao" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-sign-out"><span id="btfiltro">Sair</span></i></button>
           <div class="collapse" id="collapseExample">
 
               <div class="row">
@@ -75,7 +84,6 @@
                       </label>
                   </div>
               </div>
-              <br>
 
 
           </div>
@@ -144,12 +152,12 @@
         <div class="row">
           <div class="col">
             <div class="bordertitle">
-              <div class="title">Valor do Frete</div>
+              <div class="title">Análise de Impacto</div>
               <div class="row cellb">
                 <div class="col">
                   <div class="cardB">
                     <div class="cardT">
-                      FRETE SOBRE AS MERCADORIAS
+                      FRETE SOBRE AS<br>MERCADORIAS
                     </div>
                     <div class="cardV">
                       1,23 %
@@ -159,7 +167,7 @@
                 <div class="col">
                   <div class="cardB">
                     <div class="cardT">
-                      FRETE SOBRE AS MERCADORIAS
+                      PEDÁGIO SOBRE<br>O FRETE
                     </div>
                     <div class="cardV">
                       1,23 %
@@ -168,8 +176,8 @@
                 </div>
                 <div class="col">
                   <div class="cardB">
-                    <div class="cardT">
-                      FRETE SOBRE AS MERCADORIAS
+                    <div class="cardT2">
+                      PESO MÉDIO POR<br>ENTREGA (TON)
                     </div>
                     <div class="cardV">
                       1,23 %
@@ -184,12 +192,12 @@
         <div class="row">
           <div class="col">
             <div class="bordertitle">
-              <div class="title">Valor do Frete</div>
+              <div class="title">Análise do frete em relação a quantidade de entrega</div>
               <div class="row cellb">
                 <div class="col card2">
-                  <div class="cardB">
-                    <div class="cardT">
-                      FRETE SOBRE AS MERCADORIAS
+                  <div class="cardC">
+                    <div class="cardT2">
+                      QUANTIDADE DE DOCUMENTOS<br>EMITIDOS
                     </div>
                     <div class="cardV">
                       1,23 %
@@ -197,9 +205,9 @@
                   </div>
                 </div>
                 <div class="col card2">
-                  <div class="cardB">
+                  <div class="cardC">
                     <div class="cardT">
-                      FRETE SOBRE AS MERCADORIAS
+                      VALOR DO FRETE POR<br>ENTREGA
                     </div>
                     <div class="cardV">
                       1,23 %
@@ -214,12 +222,12 @@
         <div class="row">
           <div class="col">
             <div class="bordertitle">
-              <div class="title">Valor do Frete</div>
+              <div class="title">Análise do frete em relação a tonelagem transportada</div>
               <div class="row cellb">
                 <div class="col card2">
                   <div class="cardB">
                     <div class="cardT">
-                      FRETE SOBRE AS MERCADORIAS
+                      TONELADAS<br>TRANSPORTADAS
                     </div>
                     <div class="cardV">
                       1,23 %
@@ -229,7 +237,7 @@
                 <div class="col card2">
                   <div class="cardB">
                     <div class="cardT">
-                      FRETE SOBRE AS MERCADORIAS
+                      VALOR DO FRETE POR<br>TONELADA
                     </div>
                     <div class="cardV">
                       1,23 %
@@ -243,17 +251,47 @@
       </div>
     </div>
 
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Atenção</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Deseja realmente sair do Painel de Gestão ?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-danger">Sair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script>
+ 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+  
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js'></script>
   <script src="/js/bootstrap-datepicker.pt-BR.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/popper.min.js"></script>
 
-  <script src="js/index.js"></script>
 
+
+
+
+  <script src="js/index.js"></script>
+  
 
 </body>
 

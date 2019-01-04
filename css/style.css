@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Source+Sans+Pro:200,400,600,700');
+
 body
 {
     background-color: #1F4E78;
+    font-family: 'Source Sans Pro';
+    padding: 0 15px;
 }
 
 #datepicker, #datepicker2{
@@ -50,10 +54,10 @@ body
 {
     position: relative;
     text-align: center;
-    font-size: 1.8em;
-    margin-top: .2em;
-    margin-bottom: 1em;
+    font-size: 2.4em;
+    margin-bottom: .92em;
     color: white;
+    font-weight: 600;
 }
 
 .cellb{
@@ -69,25 +73,39 @@ body
     margin: 5px -10px;
     border-radius: 5px;
 }
+.cardC{
+    border: white 2px solid;
+    margin: 5px -10px;
+    border-radius: 5px;
+}
 .cardT{
     text-align: center;
-    font-size: 112%;
+    font-size: 140%;
     background-image: linear-gradient(60deg,#ffcc33, #FFD966);
     border-radius: 2px 2px 0px 0px;
     color: #1F4E78;
     font-weight: 600;
-}   
+}
+.cardT2{
+    text-align: center;
+    font-size: 112%;
+    padding: 1.5% 0;
+    background-image: linear-gradient(60deg,#ffcc33, #FFD966);
+    border-radius: 2px 2px 0px 0px;
+    color: #1F4E78;
+    font-weight: 600;
+} 
 .cardV{
-    margin: .1em;
+    margin: .2em;
     text-align: center;
     font-size: 2.2em;
     color: #fff;
+    font-family: 'Fredoka One', cursive;
 }
 .botao {
     background-color: transparent; /* Blue background */
     border: none; /* Remove borders */
     color: white; /* White text */
-    padding: 5px; /* Some padding */
     font-size: 16px; /* Set a font size */
   }
   
@@ -114,10 +132,11 @@ body
 .filtro2{
     text-align: center;
     padding: 0px;
+    margin-bottom: 10px; 
 }
 
 .card2{
-padding: 0px 10%;
+padding: 0px 4%;
 }
 
 .selectpicker{
@@ -143,7 +162,6 @@ select {
     appearance:none;
     cursor:pointer;
 }
-
 /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
 label {position:relative}
 label:after {
@@ -172,7 +190,16 @@ label:after {
 {
     background-image: linear-gradient(60deg,#ffcc33, #FFD966);
 }
-
 #logo{
-    margin: 20px 0px 20px 10px;
+    margin: 15px 0px 15px 10px;
+}
+#titulo{
+    color: #1F4E78;
+    font-size: 3.7em;
+    text-align: center;
+}
+
+#btfiltro{
+    padding-left: 5px;
+    font-family: 'Source Sans Pro';
 }
